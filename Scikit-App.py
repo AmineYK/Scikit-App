@@ -27,8 +27,8 @@ last.title("""
          Scikit-App : Application for Stroke Predicition
          Cette Application vous donne accés à differents modéles de **Machine Learning** entrainés dans le but d'éffectuer des prédictions sur des patients par rapport au risque d'avoir un **Accident Vasculaire Celebrale AVC** ou pas . 
          """)
-video_file = open('data/AVC.mp4', 'rb')
-video_bytes = video_file.read()
+#video_file = open('data/AVC.mp4', 'rb')
+#video_bytes = video_file.read()
 st.video(video_bytes)
 st.sidebar.title("Vos Informations")
 model = st.sidebar.selectbox("Selectionner le modele de votre choix",("Logicstic Regression","Random Forest Classifier","Decision Tree Classifier","KNeighbors Classifier","SVC"))     
